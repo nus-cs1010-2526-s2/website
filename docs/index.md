@@ -1,4 +1,4 @@
-# NUS CS1010 Handbook for AY24/25 Semester 2
+# NUS CS1010 Handbook for AY25/26 Semester 2
 
 #
 
@@ -12,8 +12,8 @@
 
 - __Websites__
 
-    __:material-forum: &nbsp;[Forum](https://edstem.org/us/courses/70897/discussion)__<br>
-    __:simple-canvas: &nbsp;[Canvas](https://canvas.nus.edu.sg/courses/69892)__<br>
+    __:material-forum: &nbsp;[Forum](TBU)__<br>
+    __:simple-canvas: &nbsp;[Canvas](https://canvas.nus.edu.sg/courses/85271)__<br>
  
 </div>
 

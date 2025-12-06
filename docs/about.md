@@ -31,11 +31,11 @@ After taking CS1010, students should
 
 ## Important Dates
 
--   18 February 2025, Tuesday: Practical Exam 0 (6 - 9 PM)
--   4 March 2025, Tuesday: Midterm Test (10 AM - 12 PM)
--   18 March 2025, Tuesday: Practical Exam 1 (6 - 9 PM)
--   8 April 2025, Tuesday: Practical Exam 2 (6 - 9 PM)
--   29 April 2025, Tuesday: Final Exam (5 - 7 PM)
+-   10 Feb (Tue): Practical Exam 0 (6-9pm)
+-   3 Mar (Tue): Midterm Test (10am-12pm)
+-   17 Mar (Tue): Practical Exam 1 (6-9pm)
+-   7 Apr (Tue): Practical Exam 2 (6-9pm)
+-   29 Apr (Wed): Final Exam (9-11am)
 
 Due to coordination with multiple other courses and logistics issues -- the practical exam dates/times are subject to change.  It will be finalized by Week 3 of the semester.
 
@@ -82,11 +82,13 @@ The summative assessments, on the other hand, are meant to evaluate student lear
 
 -   Quizzes: 5%
 -   Programming Exercises: 5%
+-   Tutorial Attendance: 5% 
 -   Practical Exam 0: 10%
 -   Practical Exam 1: 15%
--   Practical Exam 2: 20%
+-   Practical Exam 2: 15%
 -   Midterm Assessment: 15%
 -   Final Assessment: 30%
+-   (Bonus) Forum Participation: 3%
 
 ### Open-Book Assessment
 
@@ -163,9 +165,9 @@ Please note that the following are not handled by the CS1010 teaching team.  We 
 
 CS1010 uses several web applications to manage the content, assessments, and interaction with students.
 
--   [**Canvas**](https://canvas.nus.edu.sg/courses/69892): Announcements, class rosters, surveys, quizzes, grades, and sharing of PDF documents are managed through Canvas.
--   [**Handbook**](https://nus-cs1010-2425-s2.github.io/website/): Notes, problem sets, programming exercises, and lab guides, are publicly available on the web.
--   [**Forum**](https://edstem.org/us/courses/70897/discussion): Q & A website that serves as the main forum for discussion about CS1010.
+-   [**Canvas**](https://canvas.nus.edu.sg/courses/85271): Announcements, class rosters, surveys, quizzes, grades, and sharing of PDF documents are managed through Canvas.
+-   [**Handbook**](https://nus-cs1010-2526-s2.github.io/website/): Notes, problem sets, programming exercises, and lab guides, are publicly available on the web.
+-   [**Forum**](TBU): Q & A website that serves as the main forum for discussion about CS1010.
 -   [**GitHub**](https://www.github.com): Contains submitted code repositories and feedback about the code from tutors.
 -   [**Softmark**](https://softmark.comp.nus.edu.sg): Contain written test scripts and feedback about the answers.
 
