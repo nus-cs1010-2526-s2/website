@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -232,8 +232,9 @@
     
     
     
-    
       
+        
+        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -270,8 +271,9 @@
     
     
     
-    
       
+        
+        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -310,10 +312,10 @@
     
     
     
+      
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
@@ -347,8 +349,9 @@
     
     
     
-    
       
+        
+        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -386,8 +389,9 @@
     
     
     
-    
       
+        
+        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -427,10 +431,10 @@
     
     
     
+      
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
@@ -722,8 +726,9 @@
     
     
     
-    
       
+        
+        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -768,8 +773,9 @@
     
     
     
-    
       
+        
+        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -1010,9 +1016,9 @@
 
 <h2 id="os-and-compiler">OS and Compiler</h2>
 <p>C is a common programming language.  You can find different implementations of a C compiler on many platforms.  Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_compilers#C_compilers">lists more than 40 different C compilers</a>.  These different compilers support different processor architectures and operating systems and may behave slightly differently as well as support different features of C standards.  It is therefore important for CS1010 to stick to a single platform and single compiler.</p>
-<p>Our platform of choice is <strong>Ubuntu 20.04.</strong> using the <code>clang</code> compiler (<strong>version 12.0 or later</strong>).</p>
+<p>Our platform of choice is <strong>Ubuntu 24.4.</strong> using the <code>clang</code> compiler (<strong>version 18.0 or later</strong>).</p>
 <h2 id="pe-nodes">PE Nodes</h2>
-<p>The school has provided a list of computing servers with the above environments for you to use (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2h-2m0 2h2v2h-2V9Z"/></svg></span> in Figure 1).  The nodes are accessible via <code>xlogin</code>.  (<code>pe</code> stands for "programming environment").  We will refer to these servers generally as the <em>PE nodes.</em></p>
+<p>The school has provided a list of computing servers with the above environments for you to use (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2h-2m0 2h2v2h-2V9Z"/></svg></span> in Figure 1).  The nodes are accessible via <code>pelogin</code>.  (<code>pe</code> stands for "programming environment").  We will refer to these servers generally as the <em>PE nodes.</em></p>
 <p>You will be automatically assigned to one of the nodes when you login.  You share the same home directory across all the nodes (this home directory, however, is different from that of <code>stu</code>).</p>
 <p>For simplicity, the following guide uses <code>xcnd0</code>, which is one of the pe nodes, in all examples.</p>
 <h2 id="accessing-pe-nodes">Accessing PE Nodes</h2>
@@ -1040,11 +1046,13 @@
 <p>To connect to a remote host, run the following in your terminal on your local computer:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ssh &lt;username&gt;@&lt;hostname&gt;
 </code></pre></div></td></tr></table></div></p>
-<p>Replace <code>&lt;username&gt;</code> with your SoC Unix username and <code>&lt;hostname&gt;</code> is xlogin.comp.nus.edu.sg. For instance, I would do:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ssh zhaojin@xlogin.comp.nus.edu.sg
+<p>Replace <code>&lt;username&gt;</code> with your SoC Unix username and <code>&lt;hostname&gt;</code> is pelogin.comp.nus.edu.sg. For instance, I would do:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ssh zhaojin@pelogin.comp.nus.edu.sg
 </code></pre></div></td></tr></table></div></p>
-<p>After the command above, follow the instructions on the screen.  The first time you ever connect to <code>xlogin.comp.nus.edu.sg</code>, you will be warned that you are connecting to a previously unknown host.  Answer <code>yes</code>.  After that, you will be prompted with your SoC Unix password.  Note that nothing is shown on the screen when your password is being entered.</p>
-<p><img alt="xlogin" src="figures/xlogin.png" /></p>
+<p>After the command above, follow the instructions on the screen.  </p>
+<p>The first time you ever connect to <code>pelogin.comp.nus.edu.sg</code>, you will be warned that you are connecting to a previously unknown host.  Answer <code>yes</code>.  </p>
+<p>After that, you will be prompted with your SoC Unix password.  Note that nothing is shown on the screen when your password is being entered.</p>
+<p><img alt="pelogin" src="figures/pelogin.png" /></p>
 <h3 id="accessing-the-pe-nodes-from-outside-soc">Accessing The PE Nodes from Outside SoC</h3>
 <p>The PE nodes can only be accessed from within the School of Computing networks.  If you want to access it from outside, you need to connect through SoC VPN (<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h4a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H9m2 2h2v6h-2V9Z"/></svg></span> in Figure 1).</p>
 <p>First, you need to set up a Virtual Private Network (VPN) (See <a href="https://dochub.comp.nus.edu.sg/cf/guides/network/vpn">instructions here</a>).  The staff at the IT helpdesk in COM1, Level 1, will be able to help you with setting up if needed.  You can also contact them via the NUS IT RT system at <a href="https://rt.comp.nus.edu.sg">https://rt.comp.nus.edu.sg</a>.</p>
@@ -1069,6 +1077,11 @@
 <p>Let's say you want to transfer a set of C files from the directory <code>a01</code> to your local computer, then, on your local computer.  You run:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>scp<span class="w"> </span>zhaojin@xlogin.comp.nus.edu.sg:~/a01/*.c<span class="w"> </span>.
 </code></pre></div></td></tr></table></div>
+<div class="admonition note">
+<p class="admonition-title">pelogin" vs "xlogin</p>
+<p>Note that scp is disabled on pelogin. That why xlogin is used here instead. </p>
+<p>Despite some differences in the setup, the two servers share a few similarties including the login credentials and the user home directories. If you copy a file to xlogin, you will be able to access the file in pelogin as well.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you have files with the same name in the remote directory, the files will be overwritten without warning.  I have lost my code a few times due to <code>scp</code>.  </p>
@@ -1118,11 +1131,11 @@ The key&#39;s randomart image is:
 </code></pre></div></td></tr></table></div></p>
 <p>Take note of the <path-to-public-key> which shows path to the public key on the local machine.</p>
 <h3 id="adding-the-public-key-to-the-pe-node">Adding the Public Key to the PE Node</h3>
-<p><a href="environments.html#copying-files-between-pe-nodes-and-local-computer">Copy</a> the public key <code>id_rsa.pub</code> to your home directory on PE node using scp. </p>
+<p><a href="environments.html#copying-files-between-pe-nodes-and-local-computer">Copy</a> the public key <code>id_rsa.pub</code> to your home directory on <code>xlogin</code> using <code>scp</code>. </p>
 <p>The command should look like </p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>scp &lt;path-to-the-key&gt; &lt;username&gt;@xlogin.comp.nus.edu.sg:~/
 </code></pre></div></td></tr></table></div>
-<p>In your home directory of the PE node, run
+<p>After copying, ssh into <code>pelogin</code> and run
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
 </code></pre></div></td></tr></table></div></p>
 <p>If there are permission errors, make sure that the permission for the directory <code>.ssh</code> both on the local machine and on the PE node is set to <code>700</code> and the files <code>id_rsa</code> on the local machine and <code>authorized_keys</code> on the pe node are set to <code>600</code>.  Once set up, you need not enter your password every time you run <code>ssh</code> or <code>scp</code>.  </p>
@@ -1131,14 +1144,6 @@ The key&#39;s randomart image is:
 <p>On Windows, the equivalent of <code>chmod</code> is <code>icacls</code>.  While the default permission should work without you doing anything, but if needed, you can change the permission with</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>icacls &lt;path&gt; /grant:r &quot;&lt;username&gt;:F&quot;   
 </code></pre></div></td></tr></table></div>
-</div>
-<div class="admonition tips">
-<p class="admonition-title">Using ssh-copy-id</p>
-<p>If you have <a href="https://www.ssh.com/academy/ssh/copy-id"><code>ssh-copy-id</code></a> installed (e.g., this is pre-installed with macOS), you can simplify the above to two steps:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>ssh-keygen -t rsa
-ssh-copy-id &lt;username&gt;@xlogin.comp.nus.edu.sg
-</code></pre></div></td></tr></table></div></p>
 </div>
 <h3 id="checking-your-authentication-settings">Checking Your Authentication Settings</h3>
 <p>To check if you can connect to the PE node using SSH keys, simply exit the PE node and try connecting to it again.</p>
@@ -1277,10 +1282,10 @@ connected to with this error and your username.  The system administrator can re
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       
