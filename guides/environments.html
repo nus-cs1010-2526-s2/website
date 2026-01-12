@@ -1096,7 +1096,7 @@ You can copy specific files as well.  For instance, to copy the file <code>hello
 <p>The next step is not required but is a time-saver and a huge quality-of-life improvement.  You need to be familiar with basic Unix commands, including how to copy files to remote hosts (using <code>scp</code>) and how to check/change file permissions (using <code>ls -l</code> and <code>chmod</code>).  If you are still not comfortable with these commands, make sure you play with the <a href="unix-essentials.html">basic Unix commands</a> first.  You can come back and complete this step later. </p>
 <h3 id="basic-of-ssh-keys">Basic of SSH Keys</h3>
 <p>SSH uses <em>public-key cryptography</em> for authentication.  The keys come in pairs: a public key and a private key.  The private key must be kept safe and known only to you.  You should keep the private key in your PE account, and not share it with others.</p>
-<p>To authenticate yourself to another host or service, you configure the host/service with your public key.  When it is time for you to log in, your private key is "matched"[^1] with your public key.  Since only you know your private key, the service or the host can be sure that you are you and not someone else.</p>
+<p>To authenticate yourself to another host or service, you configure the host/service with your public key.  When it is time for you to log in, your private key is "matched"<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> with your public key.  Since only you know your private key, the service or the host can be sure that you are you and not someone else.</p>
 <p>Suppose you want to log in from host <em>X</em> to host <em>Y</em> without a password.  You generate a pair of keys on <em>X</em>, then keep the private keys on <em>X</em> and store the public keys on <em>Y</em>.  </p>
 <p>For example, you can generate the pair of keys on your computer (e.g., <em>X</em>) and then copy the public key to the CS1010 PE node (<em>Y</em>). </p>
 <p>Afterwards, you will be able to log into the PE node from your computer without a password, </p>
@@ -1186,6 +1186,14 @@ and you get the following error:</p>
 connected to with this error and your username.  The system administrator can reset the permission of your home directory for you.</p>
 </li>
 </ol>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>I skipped many cool details here.  This topic is part of CS2105 and CS2107.  Interested students can search for various articles and videos online about how public-key cryptography is used for authentication.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 
