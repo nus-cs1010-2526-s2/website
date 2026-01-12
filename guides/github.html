@@ -591,6 +591,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-adding-the-cs1010-directory-to-your-bash-profile-as-one-of-the-default-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Adding the cs1010 directory to your bash profile as one of the default paths
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -821,6 +830,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#4-adding-the-cs1010-directory-to-your-bash-profile-as-one-of-the-default-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Adding the cs1010 directory to your bash profile as one of the default paths
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -930,7 +948,7 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>git config --global credential.helper store
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>Next, run the following command so that the empty lab assignment will be set up and a Github login will be triggered.</li>
+<li>Next, run <code>get</code> script from the cs1010 directory so that the empty lab assignment will be set up and a Github login will be triggered.</li>
 </ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>/opt/course/cs1010/get setup-test
 </code></pre></div></td></tr></table></div>
@@ -961,6 +979,15 @@ Receiving objects: 100% (3/3), done.
 <p>Change your working directory into <code>setup-test-&lt;username&gt;</code> and look at the directory content.  It should contain a file <code>README.md</code>. </p>
 <p>From this point onwards, you should be able to use git without having to enter your credentials.</p>
 <p><ins class="critic">If you see the message "Vim is not set up set up properly," please refer to the our <a href="vim-setup.html">Vim setup guide</a> and set up Vim accordingly.</ins></p>
+<h2 id="4-adding-the-cs1010-directory-to-your-bash-profile-as-one-of-the-default-paths">4. Adding the cs1010 directory to your bash profile as one of the default paths</h2>
+<p>To simplify the workflow further, you can use vim to create / edit the file .bash_profile in your home directory.</p>
+<p>Add this line at the end of the file, save the file and exit vim.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>export PATH=&quot;$PATH:/opt/course/cs1010&quot;
+</code></pre></div></td></tr></table></div>
+<p>Back at the unix command prompt, run <code>source ~/.bash_profile</code></p>
+<p>Afterwards, you should be able to run the <code>get</code> script without having to indicate the cs1010 directory.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>get setup-test
+</code></pre></div></td></tr></table></div>
 
 
 
