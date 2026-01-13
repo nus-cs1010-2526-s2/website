@@ -14,7 +14,7 @@
         <link rel="prev" href="clang.html">
       
       
-        <link rel="next" href="../exercises/ex00.html">
+        <link rel="next" href="../readings.html">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -579,27 +579,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../exercises/ex00.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    0. I/O, Types, and Arithmetic
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -840,7 +819,7 @@
 <h2 id="retrieving-and-submitting-programming-questions">Retrieving and Submitting Programming Questions</h2>
 <p>All instructions below are meant to be run on the <a href="environments.html">PE hosts</a>.</p>
 <p>Every programming exercise has a unique ID, prefixed with <code>ex</code>, and is followed by a two-digit sequence number. </p>
-<p>We use <a href="https://classroom.github.com/classrooms/176658209-cs1010-24-25-s1">GitHub Classroom</a> for managing the submission (including submissions history) and grading.  You will have one code <em>repository</em> for each exercise.</p>
+<p>We use <a href="https://classroom.github.com/classrooms/248155040-cs1010-25-26-s2">GitHub Classroom</a> for managing the submission (including submissions history) and grading.  You will have one code <em>repository</em> for each exercise.</p>
 <p>The steps for completing a programming assignment/exercise are as follows:</p>
 <ol>
 <li>
@@ -848,16 +827,17 @@
 </li>
 <li>
 <p><strong>Get</strong>: On one of the PE hosts, run:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>~cs1010/get &lt;id&gt;
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>/opt/course/cs1010/get &lt;id&gt;
 </code></pre></div></td></tr></table></div></p>
-<p>For example, to get the first exercise, run <code>~cs1010/get ex00</code>.  This step would cause a copy of your repository to be cloned into the current directory on the PE hosts.  You now have a copy of the code and test data on the PE hosts.</p>
+<p>For example, to get the first exercise, run <code>/opt/course/cs1010/get ex00</code>.  This step would cause a copy of your repository to be cloned into the current directory on the PE hosts.  You now have a copy of the code and test data on the PE hosts.</p>
+<p>Note that you can simply run <code>get &lt;id&gt;</code> if you have updated your bash profile as explained in the page <a href="github.html">Linking Your PE Account to Your GitHub Account</a>.</p>
 </li>
 <li>
 <p><strong>Solve</strong>: Read the questions posted online and solve each question.  More details, along with some best practices for solving the programming questions, are given below.  Note that while there are ways for you to work on the GitHub environment (using GitHub CodeSpace or VS Code) directly without logging into PE nodes, doing so is not recommended.  During the practical exams, you are required to solve the programming questions in a sandboxed environment.  The PE hosts emulate the practical exam condition closely.  So it is important for you to become comfortable using the Unix CLI and Vim of the PE hosts.</p>
 </li>
 <li>
 <p><strong>Submit</strong>: When you want to take a snapshot of your code or submit the final version for grading, run:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>~cs1010/submit &lt;id&gt;
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>/opt/course/cs1010/submit &lt;id&gt;
 </code></pre></div></td></tr></table></div></p>
 <p>This command processes your code for each question before it uploads them onto GitHub.  Note that only the modified skeleton code that corresponds to the questions are uploaded.  Any additional files in the directory will not be processed.</p>
 <p>The <code>submit</code> command perform the following action:</p>
@@ -866,19 +846,20 @@
 <li>checks whether there are any warnings/errors caused by <code>clang-tidy</code></li>
 <li>re-format your code using <code>clang-format</code></li>
 </ul>
-<p>A successful run of <code>~cs1010/submit ex01</code> would yield a message like this:
+<p>A successful run of <code>/opt/course/cs1010/submit ex01</code> would yield a message like this:
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>You have submitted your code.  Please verify your submission online at:
-  https://github.com/nus-cs1010-2425-s1/ex00-ooiwt
+  https://github.com/nus-cs1010-2526-s2/ex00-jknightk
 to make sure that everything is in order.
 </code></pre></div></td></tr></table></div></p>
 <p>After submission, it is a good practice to double-check that your submission is done properly by going to the GitHub site.</p>
 <p>You are not allowed to interact with your CS1010 GitHub repositories using <code>git</code> commands or edit your files directly on GitHub's website.  Doing so would interfere with the automation that we use for grading.</p>
+<p>Similarly, note that you can simply run <code>submit &lt;id&gt;</code> if you have updated your bash profile as explained in the page <a href="github.html">Linking Your PE Account to Your GitHub Account</a>.</p>
 </li>
 </ol>
 <h2 id="code-skeleton">Code Skeleton</h2>
-<p>After running <code>~cs1010/get &lt;id&gt;</code>, you should see the folder <code>&lt;id&gt;-&lt;username&gt;</code> in your current directory with skeleton code inside.</p>
+<p>After running <code>get</code>, you should see the folder <code>&lt;id&gt;-&lt;username&gt;</code> in your current directory with skeleton code inside.</p>
 <p>Inside that directory, you should see the following files:</p>
 <ul>
 <li>Files that end with <code>.c</code>, one for each problem/question.  The naming convention is <code>&lt;problem&gt;.c</code>.  These are the skeleton C code that you should edit to solve the programming question and the only files that you should change.</li>
@@ -1090,13 +1071,13 @@ to remove all the generated executable files.</p>
         
         
           
-          <a href="../exercises/ex00.html" class="md-footer__link md-footer__link--next" aria-label="Next: 0. I/O, Types, and Arithmetic">
+          <a href="../readings.html" class="md-footer__link md-footer__link--next" aria-label="Next: Readings">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                0. I/O, Types, and Arithmetic
+                Readings
               </div>
             </div>
             <div class="md-footer__button md-icon">
