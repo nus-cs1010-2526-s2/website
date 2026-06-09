@@ -8,7 +8,7 @@
 |3   |	25 Jan| Units 5-7: Basic C Programming           |         | PS 2, Unix/Vim Setup  | Quiz 2         |                       |
 |4   |	02 Feb| Units 8-10: Conditionals                 |         | PS 3 & 8, Debugging, EX 0 | Quiz 3, EX 0 |                     | 
 |5   |	09 Feb| Units 11-12: Loops                       | PE0     | PS 9-10, Coding Style, EX 0-1 |        | Quiz 4, EX 1          |
-|6   |	16 Feb| Units 13-14: Call Stack, Arrays          |         | PS 11-12, Test Cases, EX 1-2 | Quiz 5  |                       |
+|6   |	16 Feb| Units 13-14: Call Stack, Arrays          |         | PS 11-12, Test Cases, EX 1-2 |         | Quiz 5                |
 |    |  23 Feb| Recess                                   |         |                 |                      |                       | 
 |7   |	02 Mar| Midterm                                  |         | PS 13-14, EX 2-3, Array Errors, Midterm Preparation | Quiz 6, EX 2| |
 |8   |	09 Mar| Units 15-18:Pointers, Memory Management  |         | PS 15-17, Compiling with Clang, EX 3, Assessment Review | EX 3 | |

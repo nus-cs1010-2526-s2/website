@@ -30,24 +30,35 @@ All instructions below are meant to be run on the [PE hosts](environments.md).
 
 Every programming exercise has a unique ID, prefixed with `ex`, and is followed by a two-digit sequence number. 
 
-We use [GitHub Classroom](https://classroom.github.com/classrooms/176658209-cs1010-24-25-s1) for managing the submission (including submissions history) and grading.  You will have one code _repository_ for each exercise.
+We use [GitHub Classroom](https://classroom.github.com/classrooms/248155040-cs1010-25-26-s2) for managing the submission (including submissions history) and grading.  You will have one code _repository_ for each exercise.
 
 The steps for completing a programming assignment/exercise are as follows:
 
-1. __Accept__: Upon release, log into your GitHub account registered with CS1010 and click on the given Web link to accept the assignment/exercise.  This step would cause a repository to be created for you on GitHub Classroom, and a copy of the skeleton code and test data to be cloned inside that repository.  The name of the repository is of the form `<id>-<username>`.  For instance, `ex00-ooiwt`.
+1. __Accept__: Upon release, log into your GitHub account registered with CS1010 and click on the given Web link to accept the assignment/exercise.  This step would cause a repository to be created for you on GitHub Classroom.  The name of the repository is of the form `<id>-<username>`.  For instance, `ex00-ooiwt`.
+
+![rai](figures/repo-access-issue.png)
+
+If you encounter the reposity access issue page, it is likely that you need to accept the email invitation from Github so that you have proper access to the repo.
+
+(Note that the email is send to your email associated with Github and may have landed in your spam.)
+
+Please accept the invitation via that email as well before you proceed to the remaining steps.
 
 2. __Get__: On one of the PE hosts, run:
 ```
-~cs1010/get <id>
+/opt/course/cs1010/get <id>
 ```
 
-    For example, to get the first exercise, run `~cs1010/get ex00`.  This step would cause a copy of your repository to be cloned into the current directory on the PE hosts.  You now have a copy of the code and test data on the PE hosts.
+    For example, to get the first exercise, run `/opt/course/cs1010/get ex00`.  This step would cause a copy of your repository to be cloned into the current directory on the PE hosts.  You now have a copy of the code and test data on the PE hosts.
+	
+	Note that you can simply run `get <id>` if you have updated your bash profile as explained in the page [Linking Your PE Account to Your GitHub Account](github.md).
+
 
 3. __Solve__: Read the questions posted online and solve each question.  More details, along with some best practices for solving the programming questions, are given below.  Note that while there are ways for you to work on the GitHub environment (using GitHub CodeSpace or VS Code) directly without logging into PE nodes, doing so is not recommended.  During the practical exams, you are required to solve the programming questions in a sandboxed environment.  The PE hosts emulate the practical exam condition closely.  So it is important for you to become comfortable using the Unix CLI and Vim of the PE hosts.
 
 4. __Submit__: When you want to take a snapshot of your code or submit the final version for grading, run:
 ```
-~cs1010/submit <id>
+/opt/course/cs1010/submit <id>
 ```
 
     This command processes your code for each question before it uploads them onto GitHub.  Note that only the modified skeleton code that corresponds to the questions are uploaded.  Any additional files in the directory will not be processed.
@@ -58,20 +69,22 @@ The steps for completing a programming assignment/exercise are as follows:
     - checks whether there are any warnings/errors caused by `clang-tidy`
     - re-format your code using `clang-format`
 
-    A successful run of `~cs1010/submit ex01` would yield a message like this:
+    A successful run of `/opt/course/cs1010/submit ex01` would yield a message like this:
     ```
     You have submitted your code.  Please verify your submission online at:
-      https://github.com/nus-cs1010-2425-s1/ex00-ooiwt
+      https://github.com/nus-cs1010-2526-s2/ex00-jknightk
     to make sure that everything is in order.
     ```
 
     After submission, it is a good practice to double-check that your submission is done properly by going to the GitHub site.
 
     You are not allowed to interact with your CS1010 GitHub repositories using `git` commands or edit your files directly on GitHub's website.  Doing so would interfere with the automation that we use for grading.
+	
+	Similarly, note that you can simply run `submit <id>` if you have updated your bash profile as explained in the page [Linking Your PE Account to Your GitHub Account](github.md).
 
 ## Code Skeleton
 
-After running `~cs1010/get <id>`, you should see the folder `<id>-<username>` in your current directory with skeleton code inside.
+After running `get`, you should see the folder `<id>-<username>` in your current directory with skeleton code inside.
 
 Inside that directory, you should see the following files:
 

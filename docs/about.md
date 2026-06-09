@@ -88,7 +88,6 @@ The summative assessments, on the other hand, are meant to evaluate student lear
 -   Practical Exam 2: 15%
 -   Midterm Assessment: 15%
 -   Final Assessment: 30%
--   (Bonus) Forum Participation: 3%
 
 ### Open-Book Assessment
 
@@ -167,7 +166,7 @@ CS1010 uses several web applications to manage the content, assessments, and int
 
 -   [**Canvas**](https://canvas.nus.edu.sg/courses/85271): Announcements, class rosters, surveys, quizzes, grades, and sharing of PDF documents are managed through Canvas.
 -   [**Handbook**](https://nus-cs1010-2526-s2.github.io/website/): Notes, problem sets, programming exercises, and lab guides, are publicly available on the web.
--   [**Forum**](TBU): Q & A website that serves as the main forum for discussion about CS1010.
+-   [**Forum**](https://edstem.org/us/courses/90227/discussion): Q & A website that serves as the main forum for discussion about CS1010.
 -   [**GitHub**](https://www.github.com): Contains submitted code repositories and feedback about the code from tutors.
 -   [**Softmark**](https://softmark.comp.nus.edu.sg): Contain written test scripts and feedback about the answers.
 

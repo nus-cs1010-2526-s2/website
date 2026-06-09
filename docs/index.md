@@ -12,7 +12,7 @@
 
 - __Websites__
 
-    __:material-forum: &nbsp;[Forum](TBU)__<br>
+    __:material-forum: &nbsp;[Forum](https://edstem.org/us/courses/90227/discussion)__<br>
     __:simple-canvas: &nbsp;[Canvas](https://canvas.nus.edu.sg/courses/85271)__<br>
  
 </div>
@@ -68,7 +68,7 @@
         [:octicons-arrow-right-24:](notes/07-arithmetic-ops.md)
 
     </div>
-	
+
 	
     ## Control Statements
     <div class="grid cards" markdown>
@@ -98,7 +98,7 @@
         Reasoning about loops with invariant
         [:octicons-arrow-right-24:](notes/12-invariant.md)
 
-    </div>
+
 
     ## Arrays, Pointers, Memory Management
     <div class="grid cards" markdown>

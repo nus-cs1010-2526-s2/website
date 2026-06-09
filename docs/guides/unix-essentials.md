@@ -27,7 +27,7 @@ The root directory is the directory at the top of the directory tree[^1]. It is 
 [^1]: In computing, trees are upside down with the root at the top and leaves at the bottom!
 
 ### Home Directory
-Each user has his/her own _home_ directory.  The above figure shows where the home directory of the user `ooiwt` resides in the directory tree. The user `ooiwt` may create files or directories in his/her home directory, but not elsewhere unless permission is given.
+Each user has his/her own _home_ directory.  The above figure shows where the home directory of the user `zhaojin` resides in the directory tree. The user `zhaojin` may create files or directories in his/her home directory, but not elsewhere unless permission is given.
 
 The home directory is referred to with the symbol `~` in `bash`.  Sometimes we add the username behind `~` to indicate the home directory of the other user. E.g., `~bob` means the home directory of a user named `bob`.
 
@@ -60,7 +60,7 @@ To specify a directory or a file in the Unix directory tree, we can use either t
 
 ### Absolute path
 
-The absolute path is constructed as follows, starting from the root of the directory structure, find a path (a sequence of directories) to the location that you want to specify, then concatenate the names of the directories together, separated by the forward-slash `/`.  This is a similar notation used for Website URLs, so you should already be familiar with it.  For instance, the path `/home/o/ooiwt` is the absolute path of the directory named `ooiwt` in the figure above.
+The absolute path is constructed as follows, starting from the root of the directory structure, find a path (a sequence of directories) to the location that you want to specify, then concatenate the names of the directories together, separated by the forward-slash `/`.  This is a similar notation used for Website URLs, so you should already be familiar with it.  For instance, the path `/home/z/zhaojin` is the absolute path of the directory named `zhaojin` in the figure above.
 
 An absolute path is independent of the current working directory and always start with `/` or `~`
 
@@ -68,7 +68,7 @@ An absolute path is independent of the current working directory and always star
 
 The relative path is dependent on the current working directory.  To refer to another location, start from the current directory, and find a path (a sequence of directories) to the location that you refer to.  When we go up a tree, we use `..` to represent the directory.
 
-For example, referring to the figure above, if we are in the directory `/home/b`, and we wish to refer to `/home/o/ooiwt`, we can use the relative path `../o/ooiwt`.  If we wish to refer to `/home/b/bob`, we can use the relative path `bob`.
+For example, referring to the figure above, if we are in the directory `/home/b`, and we wish to refer to `/home/z/zhaojin`, we can use the relative path `../z/zhaojin`.  If we wish to refer to `/home/b/bob`, we can use the relative path `bob`.
 
 A relative path never starts with `/`.
 
@@ -78,13 +78,13 @@ Now, let's take a look at some basic commands available in `bash` that deals wit
 
 ### `pwd`: Print Current Working directory
 
-`pwd` shows you which directory you are currently in.  Type `pwd` into the command prompt, and it will print the absolute path to your current working directory. For instance, Suppose you are in `/home/o/ooiwt`, entering
+`pwd` shows you which directory you are currently in.  Type `pwd` into the command prompt, and it will print the absolute path to your current working directory. For instance, Suppose you are in `/home/z/zhaojin`, entering
 ```Bash
 pwd
 ```
 will give the output
 ```Bash
-/home/o/ooiwt
+/home/z/zhaojin
 ```
 
 ### `ls`: LiSt content of a directory
@@ -128,13 +128,13 @@ To navigate in the directory tree, changing the current working directory from o
 
 ```Bash
 $ pwd
-/home/o/ooiwt
+/home/z/zhaojin
 $ cd workshop
 $ pwd
-/home/o/ooiwt/workshop
+/home/z/zhaojin/workshop
 ```
 
-Suppose our starting working directory is `/home/o/ooiwt`, after we `cd` into `workshop`, the current working directory becomes `/home/o/ooiwt/workshop`.  Note that `cd` can take in either an absolute path or a relative path.  The example above takes in a relative path as the argument.
+Suppose our starting working directory is `/home/z/zhaojin`, after we `cd` into `workshop`, the current working directory becomes `/home/z/zhaojin/workshop`.  Note that `cd` can take in either an absolute path or a relative path.  The example above takes in a relative path as the argument.
 
 As mentioned in "[Unix CLI: Background](unix-background.md)", it is common to include the current working directory into the shell's prompt.  So, you may see your command prompt updated to include the new working directory.
 
@@ -354,7 +354,7 @@ You can view the permission of a file by using the `ls -l` command (`l` for long
 
 ```
 $ ls -l test.txt
--rw-r--r--@ 1 ooiwt  staff  64 Jul 28 09:52 test.txt
+-rw-r--r--@ 1 zhaojin  staff  64 Jul 28 09:52 test.txt
 ```
 
 Ignoring the first `-` and the last `@`, you can see that the permission of `test.txt` is 644.
@@ -367,7 +367,7 @@ For instance,
 ```
 $ chmod 666 test.txt
 $ ls -l test.txt
--rw-rw-rw-@ 1 ooiwt  staff  64 Jul 28 09:52 test.txt
+-rw-rw-rw-@ 1 zhaojin  staff  64 Jul 28 09:52 test.txt
 ```
 would change add the permission `w` to both group and other users[^1].
 
@@ -375,7 +375,7 @@ An alternative way is to just specify the changes.  To remove the permission to 
 ```
 $ chmod o-w test.txt
 $ ls -l test.txt
--rw-rw-r--@ 1 ooiwt  staff  64 Jul 28 09:52 test.txt
+-rw-rw-r--@ 1 zhaojin  staff  64 Jul 28 09:52 test.txt
 ```
 
 [^1]: Giving write permission to other users is a security risk.  You should not do this unless you know what you are doing.

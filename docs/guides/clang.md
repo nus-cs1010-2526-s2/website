@@ -86,7 +86,7 @@ ooiwt@pe118:~$ clang -Wall -g -I ~/citadel/include -L ~/citadel/lib teh.c -o teh
 
 For instance, to link with the [CS1010 I/O library](library.md) on the PE nodes, you can run
 ```bash
-ooiwt@pe118:~$ clang -Wall -g -I ~cs1010/include -L ~cs1010/lib teh.c -lcs1010
+ooiwt@pe118:~$ clang -Wall -g -I /opt/course/cs1010/include -L /opt/course/cs1010/lib teh.c -lcs1010
 ```
 
 ## 7. The file `compile_flags.txt`

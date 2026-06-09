@@ -61,7 +61,7 @@ Other popular shells are [`fish`](https://fishshell.com/) and [Oh-my-zsh](https:
 
 A shell has a _command prompt_. It typically looks something like this, but will be different depending on the default configuration on your machine:
 ```
-ooiwt@pe111:~$
+zhaojin@xcnd0:~$
 ```
 
 The prompt is where you type in a command for the shell to interpret and execute.  

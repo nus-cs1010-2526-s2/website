@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -232,9 +232,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -271,9 +270,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -312,10 +310,10 @@
     
     
     
-      
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
@@ -351,10 +349,10 @@
     
     
     
-      
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
@@ -823,9 +821,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -863,9 +860,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -903,9 +899,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -950,9 +945,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -1383,7 +1377,7 @@
 <h3 id="root-directory">Root Directory</h3>
 <p>The root directory is the directory at the top of the directory tree<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. It is simply referred to as <code>/</code>, without any name.  Under the root directory are many other system directory, which a casual user does not normally need to (and have no permission to) modify.</p>
 <h3 id="home-directory">Home Directory</h3>
-<p>Each user has his/her own <em>home</em> directory.  The above figure shows where the home directory of the user <code>ooiwt</code> resides in the directory tree. The user <code>ooiwt</code> may create files or directories in his/her home directory, but not elsewhere unless permission is given.</p>
+<p>Each user has his/her own <em>home</em> directory.  The above figure shows where the home directory of the user <code>zhaojin</code> resides in the directory tree. The user <code>zhaojin</code> may create files or directories in his/her home directory, but not elsewhere unless permission is given.</p>
 <p>The home directory is referred to with the symbol <code>~</code> in <code>bash</code>.  Sometimes we add the username behind <code>~</code> to indicate the home directory of the other user. E.g., <code>~bob</code> means the home directory of a user named <code>bob</code>.</p>
 <h3 id="current-working-directory">Current Working Directory</h3>
 <p>A user can navigate around the directory tree.  The <em>current working directory</em> is the directory that the user is currently in.  In contrast to the root and home directory, which are fixed<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, the current working directory changes as the user moves around.  Knowing the current working directory is important since this is the default location in the directory tree a command executes.  As such, many systems by default display the current working directory as part of the <code>bash</code> command prompt.</p>
@@ -1421,20 +1415,20 @@
 <h2 id="specifying-a-path">Specifying a Path</h2>
 <p>To specify a directory or a file in the Unix directory tree, we can use either the <em>absolute path</em> or the <em>relative path</em>.</p>
 <h3 id="absolute-path">Absolute path</h3>
-<p>The absolute path is constructed as follows, starting from the root of the directory structure, find a path (a sequence of directories) to the location that you want to specify, then concatenate the names of the directories together, separated by the forward-slash <code>/</code>.  This is a similar notation used for Website URLs, so you should already be familiar with it.  For instance, the path <code>/home/o/ooiwt</code> is the absolute path of the directory named <code>ooiwt</code> in the figure above.</p>
+<p>The absolute path is constructed as follows, starting from the root of the directory structure, find a path (a sequence of directories) to the location that you want to specify, then concatenate the names of the directories together, separated by the forward-slash <code>/</code>.  This is a similar notation used for Website URLs, so you should already be familiar with it.  For instance, the path <code>/home/z/zhaojin</code> is the absolute path of the directory named <code>zhaojin</code> in the figure above.</p>
 <p>An absolute path is independent of the current working directory and always start with <code>/</code> or <code>~</code></p>
 <h3 id="relative-path">Relative path</h3>
 <p>The relative path is dependent on the current working directory.  To refer to another location, start from the current directory, and find a path (a sequence of directories) to the location that you refer to.  When we go up a tree, we use <code>..</code> to represent the directory.</p>
-<p>For example, referring to the figure above, if we are in the directory <code>/home/b</code>, and we wish to refer to <code>/home/o/ooiwt</code>, we can use the relative path <code>../o/ooiwt</code>.  If we wish to refer to <code>/home/b/bob</code>, we can use the relative path <code>bob</code>.</p>
+<p>For example, referring to the figure above, if we are in the directory <code>/home/b</code>, and we wish to refer to <code>/home/z/zhaojin</code>, we can use the relative path <code>../z/zhaojin</code>.  If we wish to refer to <code>/home/b/bob</code>, we can use the relative path <code>bob</code>.</p>
 <p>A relative path never starts with <code>/</code>.</p>
 <h2 id="directory-related-commands">Directory-related Commands</h2>
 <p>Now, let's take a look at some basic commands available in <code>bash</code> that deals with navigation and directories.</p>
 <h3 id="pwd-print-current-working-directory"><code>pwd</code>: Print Current Working directory</h3>
-<p><code>pwd</code> shows you which directory you are currently in.  Type <code>pwd</code> into the command prompt, and it will print the absolute path to your current working directory. For instance, Suppose you are in <code>/home/o/ooiwt</code>, entering
+<p><code>pwd</code> shows you which directory you are currently in.  Type <code>pwd</code> into the command prompt, and it will print the absolute path to your current working directory. For instance, Suppose you are in <code>/home/z/zhaojin</code>, entering
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">pwd</span>
 </code></pre></div></td></tr></table></div>
 will give the output
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>/home/o/ooiwt
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>/home/z/zhaojin
 </code></pre></div></td></tr></table></div></p>
 <h3 id="ls-list-content-of-a-directory"><code>ls</code>: LiSt content of a directory</h3>
 <p>The <code>ls</code> list the content in the current working directory.</p>
@@ -1473,12 +1467,12 @@ workshop/
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>$<span class="w"> </span><span class="nb">pwd</span>
-/home/o/ooiwt
+/home/z/zhaojin
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>workshop
 $<span class="w"> </span><span class="nb">pwd</span>
-/home/o/ooiwt/workshop
+/home/z/zhaojin/workshop
 </code></pre></div></td></tr></table></div>
-<p>Suppose our starting working directory is <code>/home/o/ooiwt</code>, after we <code>cd</code> into <code>workshop</code>, the current working directory becomes <code>/home/o/ooiwt/workshop</code>.  Note that <code>cd</code> can take in either an absolute path or a relative path.  The example above takes in a relative path as the argument.</p>
+<p>Suppose our starting working directory is <code>/home/z/zhaojin</code>, after we <code>cd</code> into <code>workshop</code>, the current working directory becomes <code>/home/z/zhaojin/workshop</code>.  Note that <code>cd</code> can take in either an absolute path or a relative path.  The example above takes in a relative path as the argument.</p>
 <p>As mentioned in "<a href="unix-background.html">Unix CLI: Background</a>", it is common to include the current working directory into the shell's prompt.  So, you may see your command prompt updated to include the new working directory.</p>
 <p>Entering <code>cd</code> alone (without argument) brings you back to your home directory.  </p>
 <h3 id="rmdir-remove-a-subdirectory"><code>rmdir</code>: ReMove a subDIRectory</h3>
@@ -1681,7 +1675,7 @@ For instance, <code>r-x</code> has a numerical representation of 5, and <code>-w
 <p>You can view the permission of a file by using the <code>ls -l</code> command (<code>l</code> for long format):</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>$ ls -l test.txt
--rw-r--r--@ 1 ooiwt  staff  64 Jul 28 09:52 test.txt
+-rw-r--r--@ 1 zhaojin  staff  64 Jul 28 09:52 test.txt
 </code></pre></div></td></tr></table></div>
 <p>Ignoring the first <code>-</code> and the last <code>@</code>, you can see that the permission of <code>test.txt</code> is 644.</p>
 <h3 id="the-chmod-command">The <code>chmod</code> command</h3>
@@ -1691,7 +1685,7 @@ For instance, <code>r-x</code> has a numerical representation of 5, and <code>-w
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>$ chmod 666 test.txt
 $ ls -l test.txt
--rw-rw-rw-@ 1 ooiwt  staff  64 Jul 28 09:52 test.txt
+-rw-rw-rw-@ 1 zhaojin  staff  64 Jul 28 09:52 test.txt
 </code></pre></div></td></tr></table></div>
 would change add the permission <code>w</code> to both group and other users<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
 <p>An alternative way is to just specify the changes.  To remove the permission to write from others, you can run:
@@ -1699,7 +1693,7 @@ would change add the permission <code>w</code> to both group and other users<sup
 <span class="normal">2</span>
 <span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>$ chmod o-w test.txt
 $ ls -l test.txt
--rw-rw-r--@ 1 ooiwt  staff  64 Jul 28 09:52 test.txt
+-rw-rw-r--@ 1 zhaojin  staff  64 Jul 28 09:52 test.txt
 </code></pre></div></td></tr></table></div></p>
 <h3 id="common-scenarios-for-chmod">Common Scenarios for <code>chmod</code></h3>
 <p>Here are some scenarios where you might need to use the <code>chmod</code> command:</p>
@@ -1897,14 +1891,14 @@ This is a test file for learning Unix file management commands.
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://cdnjs.cloudflare.com/polyfill/"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

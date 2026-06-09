@@ -6,4 +6,7 @@
 
 ## Tutors
 
-- TBU
+- Garg Sanchit Amit
+- Gordon Hong Jia Jie
+- Rajeshprabu Sidharth
+

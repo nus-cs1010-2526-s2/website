@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.15">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -232,9 +232,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -271,9 +270,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -312,10 +310,10 @@
     
     
     
-      
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
@@ -349,9 +347,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -389,9 +386,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -429,9 +425,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -471,10 +466,10 @@
     
     
     
-      
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
+        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
@@ -911,9 +906,8 @@
     
     
     
+    
       
-        
-        
       
     
     <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
@@ -1225,7 +1219,7 @@
 
 <h1 id="the-cs1010-io-library">The CS1010 I/O Library</h1>
 <p>To help students get started with C programming without worrying too much about the details and pitfalls of using <code>printf</code> and <code>scanf</code>, we provide a simple-to-use library to read and write integers, floating point numbers, and strings.  </p>
-<p>The libraries are pre-installed in <a href="environments.html">CS1010 programming environments</a>, with <code>cs1010.h</code> located under <code>~cs1010/include</code> and <code>libcs1010.a</code> located under <code>~cs1010/lib</code>.  During practical exams, a copy will be provided under your exam home directory (under <code>~/include</code> and <code>~/lib</code>).</p>
+<p>The libraries are pre-installed in <a href="environments.html">CS1010 programming environments</a>, with <code>cs1010.h</code> located under <code>/opt/course/cs1010/include</code> and <code>libcs1010.a</code> located under <code>/opt/course/cs1010/lib</code>.  During practical exams, a copy will be provided under your exam home directory (under <code>~/include</code> and <code>~/lib</code>).</p>
 <h2 id="using-the-library">Using the Library</h2>
 <h3 id="header">Header</h3>
 <p>To use the CS1010 I/O library, you should <code>#include</code> the file <code>cs1010.h</code>, like this:</p>
@@ -1235,7 +1229,7 @@
 <h3 id="linking">Linking</h3>
 <p>The CS1010 I/O library is provided as the file <code>libcs1010.a</code>.  The <code>Makefile</code> provided by CS1010 is already configured to link to this library.  When you run <code>make</code> to compile your code, this library is linked by default.</p>
 <p>If you wish to manually compile your code, you need to link to the library, by supplying the argument <code>-lcs1010</code> to <code>clang</code>.  Usually, you also need to specify where you can find <code>cs1010.h</code> with the <code>-I</code> flag, and <code>libcs1010.a</code> with the <code>-L</code> flag.  For instance, in the CS1010 programming environment, you would need to compile using the command line:
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>clang -I ~cs1010/include -L ~cs1010/lib hello.c -lcs1010
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>clang -I /opt/course/cs1010/include -L /opt/course/cs1010/lib hello.c -lcs1010
 </code></pre></div></td></tr></table></div></p>
 <h2 id="reading-of-a-single-value">Reading of a Single Value</h2>
 <p>The CS1010 library supports reading of a single numeric value of type <code>long</code>, <code>double</code>, and <code>size_t</code>, as well as reading of strings (both space-separated <em>words</em> and newline-separated <em>lines</em>) from the standard input. </p>
@@ -1589,14 +1583,14 @@ Unpacking objects: 100% (6/6), done.
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.path", "navigation.prune", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.code.select", "content.code.annotate", "search.suggest", "search.highlight", "search.shareg"], "search": "../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.bd41221c.min.js"></script>
+      <script src="../assets/javascripts/bundle.7389ff0e.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script src="https://cdnjs.cloudflare.com/polyfill/"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

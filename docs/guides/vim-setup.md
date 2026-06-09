@@ -13,7 +13,7 @@ We have created a `.vimrc` file, with CS1010 defaults, for your use.  This is th
 
 To copy this file to your home directory on the PE nodes,
 ```Bash
-$ cp ~cs1010/.vimrc ~
+$ cp /opt/course/cs1010/.vimrc ~
 ```
 
 You can ask `vim` to automatically back up the files that you edit.  This has been a lifesaver for me on multiple occasions.
@@ -41,7 +41,7 @@ Additional vim extensions are installed under `~/.vim`.  To install these "offic
 
 ```Bash
 mkdir -p ~/.vim
-cp -r ~cs1010/.vim/* ~/.vim
+cp -r /opt/course/cs1010/.vim/* ~/.vim
 ```
 
 You can test out the different color schemes according to the [instructions](vim-plugins.md) to check if you have set up the plugins correctly.  The default CS1010 `.vimrc` uses the `molokai` color schemes.

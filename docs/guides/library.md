@@ -2,7 +2,7 @@
 
 To help students get started with C programming without worrying too much about the details and pitfalls of using `printf` and `scanf`, we provide a simple-to-use library to read and write integers, floating point numbers, and strings.  
 
-The libraries are pre-installed in [CS1010 programming environments](environments.md), with `cs1010.h` located under `~cs1010/include` and `libcs1010.a` located under `~cs1010/lib`.  During practical exams, a copy will be provided under your exam home directory (under `~/include` and `~/lib`).
+The libraries are pre-installed in [CS1010 programming environments](environments.md), with `cs1010.h` located under `/opt/course/cs1010/include` and `libcs1010.a` located under `/opt/course/cs1010/lib`.  During practical exams, a copy will be provided under your exam home directory (under `~/include` and `~/lib`).
 
 ## Using the Library
 
@@ -22,7 +22,7 @@ The CS1010 I/O library is provided as the file `libcs1010.a`.  The `Makefile` pr
 
 If you wish to manually compile your code, you need to link to the library, by supplying the argument `-lcs1010` to `clang`.  Usually, you also need to specify where you can find `cs1010.h` with the `-I` flag, and `libcs1010.a` with the `-L` flag.  For instance, in the CS1010 programming environment, you would need to compile using the command line:
 ```
-clang -I ~cs1010/include -L ~cs1010/lib hello.c -lcs1010
+clang -I /opt/course/cs1010/include -L /opt/course/cs1010/lib hello.c -lcs1010
 ```
 
 ## Reading of a Single Value

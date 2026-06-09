@@ -7,31 +7,31 @@ nav:
   - Notes: 
     - 1. What is a Program?: "notes/01-program.md"
     - 2. Computational Problems: "notes/02-algo.md"
-    # - 3. Functions: "notes/03-func.md"
-    # - 4. Types: "notes/04-type.md"
-    # - 5. First C Program: "notes/05-first-c.md"
-    # - 6. CS1010 I/O: "notes/06-cs1010-io.md"
-    # - 7. Arithmetic Operations: "notes/07-arithmetic-ops.md"
-    # - 8. Conditional Statement: "notes/08-if-else.md"
-    # - 9. Logical Expression: "notes/09-logical-exp.md"
-    # - 10. Assertion: "notes/10-assert.md"
-    # - 11. Loop: "notes/11-loop.md"
-    # - 12. Invariant: "notes/12-invariant.md"
-    # - 13. Call Stack: "notes/13-call-stack.md"
-    # - 14. Fixed-Length Array: "notes/14-array.md"
-    # - 15. Pointers: "notes/15-pointers.md"
-    # - 16. Call by Reference: "notes/16-call-by-reference.md"
-    # - 17. Heap: "notes/17-heap.md"
-    # - 18. String: "notes/18-string.md"
-    # - 19. Multidimensional Array: "notes/19-md-array.md"
-    # - 20. Efficiency: "notes/20-efficiency.md"
-    # - 21. Searching: "notes/21-search.md"
-    # - 22. Sorting: "notes/22-sort.md"
-    # - 23. Tower of Hanoi: "notes/23-tower.md"
-    # - 24. Permutation: "notes/24-permutation.md"
-    # - 25. N-Queens: "notes/25-queens.md"
-    # - 26. Structure: "notes/26-struct.md"
-    # - 27. Standard I/O: "notes/27-stdio.md"
+    - 3. Functions: "notes/03-func.md"
+    - 4. Types: "notes/04-type.md"
+    - 5. First C Program: "notes/05-first-c.md"
+    - 6. CS1010 I/O: "notes/06-cs1010-io.md"
+    - 7. Arithmetic Operations: "notes/07-arithmetic-ops.md"
+    - 8. Conditional Statement: "notes/08-if-else.md"
+    - 9. Logical Expression: "notes/09-logical-exp.md"
+    - 10. Assertion: "notes/10-assert.md"
+    - 11. Loop: "notes/11-loop.md"
+    - 12. Invariant: "notes/12-invariant.md"
+    - 13. Call Stack: "notes/13-call-stack.md"
+    - 14. Fixed-Length Array: "notes/14-array.md"
+    - 15. Pointers: "notes/15-pointers.md"
+    - 16. Call by Reference: "notes/16-call-by-reference.md"
+    - 17. Heap: "notes/17-heap.md"
+    - 18. String: "notes/18-string.md"
+    - 19. Multidimensional Array: "notes/19-md-array.md"
+    - 20. Efficiency: "notes/20-efficiency.md"
+    - 21. Searching: "notes/21-search.md"
+    - 22. Sorting: "notes/22-sort.md"
+    - 23. Tower of Hanoi: "notes/23-tower.md"
+    - 24. Permutation: "notes/24-permutation.md"
+    - 25. N-Queens: "notes/25-queens.md"
+    - 26. Structure: "notes/26-struct.md"
+    - 27. Standard I/O: "notes/27-stdio.md"
   - Lab Guides: 
     - Unix:
       - Background: "guides/unix-background.md"
@@ -57,14 +57,14 @@ nav:
   - Exercises: 
       - Guide to Exercises: "guides/exercises.md"
       - 0. I/O, Types, and Arithmetic: 'exercises/ex00.md'
-      # - 1. Conditionals: 'exercises/ex01.md'
-      # - 2. Loops: 'exercises/ex02.md'
-      # - 3. Fixed-Length Arrays: 'exercises/ex03.md'
-      # - 4. Dynamic Arrays and Strings: 'exercises/ex04.md'
-      # - 5. Multi-dimensional Arrays: 'exercises/ex05.md'
-      # - 6. Searching and Sorting: 'exercises/ex06.md'
-      # - 7. Recursions : 'exercises/ex07.md'
-      # - 8. Struct : 'exercises/ex08.md'
+      - 1. Conditionals: 'exercises/ex01.md'
+      - 2. Loops: 'exercises/ex02.md'
+      - 3. Fixed-Length Arrays: 'exercises/ex03.md'
+      - 4. Dynamic Arrays and Strings: 'exercises/ex04.md'
+      - 5. Multi-dimensional Arrays: 'exercises/ex05.md'
+      - 6. Searching and Sorting: 'exercises/ex06.md'
+      - 7. Recursions : 'exercises/ex07.md'
+      - 8. Struct : 'exercises/ex08.md'
   - Readings: "readings.md" 
 
 
@@ -138,7 +138,7 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdnjs.cloudflare.com/polyfill/
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
